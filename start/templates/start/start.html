@@ -1,0 +1,11 @@
+{% extends 'core/base.html'%}
+{%block content%}
+{% load static %}
+<body>
+    <link rel="stylesheet" href="{% static 'start.css'%}"/>
+    <div class=" text-center text-white">
+    <p><b> The webcam is started by clicking the following button</b></p>
+    <button type="button" class="btn btn-danger">Start</button>
+    </div>
+</body>
+{%endblock content%}

@@ -1,0 +1,21 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content%}
+<div>
+<div class= "mt-5 text-center ">
+    <img src="{% static 'IMAGES/icon.jpg'%}" alt="Profilepic"
+    class="img-thumbnail"  height="250px" width="611px"
+</div>
+<div class= "mx-5 text-justify">
+  <h1 class="font-weight-bold text-warning ">Face Emotion Recognition</h1>
+    <div class="px-4 text-white" style="line-height:2rem">
+        <p >In future, face image recognition plays a vital role in multi-cultural visual communication systems, for emotion translation between cultures which may be considered analogous to speech recognition.
+Detection of vocal expressions of emotions is also done by it. We found that human beings recognize anger, happiness, sadness by their visual appearance, compared to voice only detection.As a conclusion, we propose a method of facial emotion detection by using hybrid approach, which uses 
+facial emotion recognition.</p>
+    </div>
+</div>
+<a href="{% url 'about' %}" class="btn btn-outline-warning my-3 mr-5 mx-2">About</a>
+<a href="{% url 'technology' %}" class="btn btn-outline-warning my-3 mx-2">Technology</a>
+<a href="{% url 'start' %}" class="btn btn-outline-warning my-3 mx-2 ">Start</a>
+</div>
+{% endblock content%}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACE EMOTION RECOGNITION</title>
+    <link rel="stylesheet" href="{% static 'CSS/all.min.css'%}">
+     <link rel="stylesheet" href="{% static 'CSS/bootstrap.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+{% block corecss%}
+    <link rel="stylesheet" href="{% static 'CSS/core.css'%}">
+</head>
+{% endblock corecss%}
+<body>
+
+<div class="container-fluid bg-dark ">
+    <div class="row">
+        <div class="col-sm-2">
+        {% include 'core/sidebar.html'%
+        </div>
+        <div class= "col-sm-10">
+        {% block content%}{% endblock content%}
+        </div>
+    </div>
+</div>
+<script src="{% static 'JS/jquery.js' %}"></script>
+<script src="{% static 'JS/popper.js' %}"></script>
+<script src="{% static 'JS/all.min.js' %}"></script>
+<script src="{% static 'JS/bootstrap.js' %}"></script>
+</body>
+</html>
